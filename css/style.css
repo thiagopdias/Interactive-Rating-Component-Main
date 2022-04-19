@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body {
+    background-color: #121417;
+    font-family: 'Overpass', sans-serif;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    margin: 30px auto;
+    width: 50%;
+    max-width: 320px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #252d37;
+    display: block;
+    animation: slidein 2s;
+}
+
+@keyframes slidein {
+    from {
+      margin: -300px auto;
+    }
+  
+    to {
+      margin: 30px auto;
+    }
+}
+
+.container {
+    margin: 30px auto;
+    width: 50%;
+    max-width: 320px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #252d37;
+    animation: slidein 2s;
+}
+
+
+.svg {
+    width: 33px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: rgba(124, 135, 152, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.title-start {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+p.paragraph-start {
+    color: #959eac;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons .avaliacao input {
+    text-align: center;
+    background-color: rgba(124, 135, 152, 0.3);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    color: #959eac;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.buttons .avaliacao input:hover {
+    background-color: #959eac;
+    color: #ffffff;
+    transition: .7s;
+}
+
+.buttons .avaliacao input:focus {
+    background-color: #fb7413;
+    color: #ffffff;
+    transition: .7s;
+}
+
+.enviar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enviar input {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    background: #fb7413;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+.enviar input:hover {
+    background-color: #ffffff;
+    color: #fb7413;
+    transition: .5s;
+}
+
+img.thank-you {
+    max-width: 162px;
+    display: block;
+    margin: 0 auto;
+}
+
+.paragraph-special {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(124, 135, 152, 0.3);
+    color: #fb7413;
+    border-radius: 20px;
+    max-width: 190px;
+}
+
+h1.title-end {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p.paragraph-end {
+    text-align: center;
+    color: #959eac;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: .9rem;
+}
+
+.attribution { 
+    margin-top: 205px;
+    font-size: 1rem; 
+    text-align: center; 
+    color: #959eac;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 630px) {
+    .container {
+        width: 315px;
+        overflow: auto;
+    }
+
+    .show {
+        width: 315px;
+        overflow: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    img.thank-you {
+        max-width: 100px;
+    }
+
+    .attribution {
+        margin-top: 190px;
+    }
+}
+
+
+@media (max-width: 330px) {
+    body {
+        font-size: 30%;
+    }
+
+    .container {
+        max-width: 200px;
+        overflow: scroll;
+    }
+
+    .buttons {
+        justify-content: center;
+        
+    }
+
+    .buttons .avaliacao input {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    .enviar input {
+        width: 70px;
+    }
+
+    .show {
+        max-width: 200px;
+        overflow-y: scroll;
+    }
+
+    img.thank-you {
+        max-width: 60px;
+    }
+}

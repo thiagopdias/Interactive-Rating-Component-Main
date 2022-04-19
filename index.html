@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <section class="container" id="esconde">
+    <div class="svg">
+      <img src="images/icon-star.svg" alt="Uma estrela">
+    </div>
+
+    <h1 class="title-start">How did we do?</h1>
+
+    <p class="paragraph-start">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+
+    <div class="buttons">
+      <div class="avaliacao">
+        <input type="button" value="1" id="buttonOne">
+      </div>
+
+      <div class="avaliacao">
+        <input type="button" value="2" id="buttonTwo">
+      </div>
+
+      <div class="avaliacao">
+        <input type="button" value="3" id="buttonThree">
+      </div>
+
+      <div class="avaliacao">
+        <input type="button" value="4" id="buttonFour">
+      </div>
+
+      <div class="avaliacao">
+        <input type="button" value="5" id="buttonFive">
+      </div>
+    </div>
+
+    <div class="enviar">
+        <a href="#state">
+          <input type="submit" value="Submit" id="submit">
+        </a>
+    </div>
+  </section>
+
+  <section class="container" id="state">
+    <img src="images/illustration-thank-you.svg" alt="illustration-thank-you" class="thank-you">
+
+    <p class="paragraph-special">You selected <span id="resultado"></span> out of 5</p>
+
+    <h1 class="title-end">Thank you!</h1>
+
+    <p class="paragraph-end">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don't hesitate to get in touch!</p>
+</section>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/thiagopdias" target="_blank">Thiago Dias</a>.
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
