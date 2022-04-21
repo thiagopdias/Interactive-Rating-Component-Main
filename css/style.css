@@ -24,9 +24,12 @@ a {
 }
 
 .show {
-    margin: 30px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50%;
-    max-width: 320px;
+    max-width: 350px;
     height: 350px;
     padding: 20px;
     border-radius: 15px;
@@ -41,14 +44,17 @@ a {
     }
   
     to {
-      margin: 30px auto;
+      margin: 0px auto;
     }
 }
 
 .container {
-    margin: 30px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50%;
-    max-width: 320px;
+    max-width: 350px;
     height: 350px;
     padding: 20px;
     border-radius: 15px;
@@ -91,7 +97,7 @@ p.paragraph-start {
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -107,6 +113,10 @@ p.paragraph-start {
     cursor: pointer;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.buttons .avaliacao input:first-child  {
+    margin-left: 0;
 }
 
 .buttons .avaliacao input:hover {
@@ -181,7 +191,10 @@ p.paragraph-end {
 }
 
 .attribution { 
-    margin-top: 205px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1rem; 
     text-align: center; 
     color: #959eac;
@@ -195,17 +208,19 @@ p.paragraph-end {
 
 @media (max-width: 630px) {
     .container {
-        width: 315px;
         overflow: auto;
     }
 
     .show {
-        width: 315px;
         overflow: auto;
     }
 
     .buttons {
         justify-content: center;
+    }
+
+    .buttons .avaliacao input {
+        margin: 5px;
     }
 
     img.thank-you {
@@ -236,7 +251,6 @@ p.paragraph-end {
     .buttons .avaliacao input {
         width: 30px;
         height: 30px;
-        margin: 5px;
     }
 
     .enviar input {
